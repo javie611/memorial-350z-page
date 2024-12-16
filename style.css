@@ -169,7 +169,7 @@ footer {
 }
 
 .qa-button {
-    background-color: #5888;
+    background-color: #55888888;
     color: white;
     padding: 15px 20px;
     font-size: 1.1rem;
@@ -229,9 +229,9 @@ footer {
 }
 .youtube-embed {
     width: 350px; /* Set the card width */
-    margin: 20px auto; /* Center the card horizontally */
+    margin: 1px auto; /* Center the card horizontally */
     padding: 15px; /* Add padding inside the card */
-    background-color: rgba(255, 255, 255, 0.363); /* Semi-transparent black background */
+    background-color: #55888888; /* Semi-transparent black background */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for a lifted effect */
     text-align: center; /* Center content */
@@ -367,7 +367,7 @@ footer {
     margin-top: 30px; /* Extra spacing before cards */
   }
   .card {
-    background: rgba(255, 255, 255, 0.39); /* Slightly stronger white transparency */
+    background: #55888888; /* Slightly stronger white transparency */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* A stronger shadow for depth */
     border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effect */
