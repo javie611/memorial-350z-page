@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../html-sandbox"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "350 memorial page"
+	}
+}

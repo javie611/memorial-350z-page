@@ -1,0 +1,479 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0d8eeab;
+}
+
+header {
+    text-align: center;
+    
+    color: white; /* Text color */
+    padding: 50px 0; /* Add more padding for better spacing */
+    font-size: 1.5rem; /* Adjust text size */
+    font-family: "Arial", sans-serif; /* Change font if desired */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    border: none; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    padding: 10px;
+    align-items: center;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 40%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.section p {
+    flex: 1 1 50%;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border: none; 
+}
+
+.resize-image {
+    width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+/* YouTube embed styles */
+.youtube-embed {
+    position: absolute;
+    top: 0px; /* Distance from the top */
+    right: 1px; /* Distance from the right */
+    z-index: 10; /* Ensure it stays on top */
+    width: 300px; /* Set a fixed width matching the iframe */
+}
+
+.youtube-description {
+    margin-top: 10px;
+    text-align: center; /* Centers the text and link under the video */
+}
+
+.youtube-description p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.youtube-description a {
+    font-size: 0.9rem;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.youtube-description a:hover {
+    text-decoration: underline;
+}
+
+.qa-section {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    margin-top: 20px; /* Adjust for vertical positioning */
+  }
+  
+  .qa-button {
+    background-color: #5877; /* Green background */
+    color: white;
+    padding: 20px 40px; /* Larger padding to make it a bigger square */
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px; /* Rounded edges */
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px; /* Controls width of the button */
+    line-height: 1.4; /* Adjusts spacing between lines in text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for emphasis */
+  }
+  
+  .qa-button:hover {
+    background-color: #455a; /* Darker green on hover */
+  }
+  
+  .qa-content {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
+  }
+  .resize-image {
+    width: 400px; /* Set a fixed width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 300px; /* Optional: Limits height for consistency */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    object-fit: cover; /* Ensures image fills the space consistently */
+}
+.qa-content {
+    display: none;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Adds smooth transition */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.qa-content.show {
+    display: block;
+    max-height: 300px; /* Maximum height for the content */
+    opacity: 1;
+}
+.qa-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.qa-button {
+    background-color: #5888;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.qa-button:hover {
+    background-color: #283655;
+    transform: scale(1.05);
+}
+
+.qa-content {
+    display: none;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 600px;
+    max-height: 200px; /* Set maximum height */
+    overflow-y: auto; /* Makes it scrollable when content overflows */
+}
+
+.qa-scrollable {
+    padding: 10px;
+}
+
+.qa-item {
+    margin-bottom: 15px;
+}
+
+.qa-item p {
+    margin: 0;
+}
+
+.qa-item p strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+.qa-content {
+    display: none;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 600px;
+    max-height: 200px; /* Set a max height to make it scrollable */
+    overflow-y: auto; /* Enables scrolling when content overflows */
+}
+.youtube-embed {
+    width: 350px; /* Set the card width */
+    margin: 20px auto; /* Center the card horizontally */
+    padding: 15px; /* Add padding inside the card */
+    background-color: rgba(255, 255, 255, 0.363); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for a lifted effect */
+    text-align: center; /* Center content */
+    color: #fff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+}
+
+.youtube-embed iframe {
+    border-radius: 8px; /* Rounded corners for the video */
+    max-width: 100%; /* Ensure video is responsive */
+}
+
+.youtube-description {
+    margin-top: 10px; /* Space between video and text */
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.youtube-description a {
+    color: #ffd700; /* Optional: Gold color for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.youtube-description a:hover {
+    text-decoration: underline;
+}
+.top-qna-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Spacing below the header */
+}
+
+#scrollToQnA {
+    background-color: #5888; /* Semi-transparent blue */
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToQnA:hover {
+    background-color: #283655; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+  /* Card Styling for Each Section */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin: 20px auto; /* Spacing between cards */
+    padding: 20px; /* Inner spacing */
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    max-width: 1000px; /* Limit width for larger screens */
+    overflow: hidden; /* Ensures clean edges */
+  }
+  
+  /* Image inside the card */
+  .card img {
+    width: 40%; /* Adjust image width */
+    border-radius: 10px; /* Slightly rounded corners for images */
+    object-fit: cover; /* Maintain image aspect ratio */
+    height: auto;
+  }
+  
+  /* Text inside the card */
+  .card-content {
+    flex: 1; /* Allow text to grow and fill space */
+    color: #333; /* Darker text for readability */
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  body {
+    background-image: url('updat\ street.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+  }
+  /* General card container styling */
+.card {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin: 20px auto; /* Space between cards */
+    padding: 20px; /* Inner spacing */
+    max-width: 1000px; /* Limit card width */
+    overflow: hidden; /* Clean overflow edges */
+  }
+  
+  /* Image in the card */
+  .card img {
+    flex: 0 0 40%; /* Set the image to take up 40% of the width */
+    max-width: 40%; /* Prevent the image from exceeding 40% */
+    border-radius: 10px; /* Rounded corners for the image */
+    object-fit: cover; /* Ensures the image retains its aspect ratio */
+  }
+  
+  /* Text content in the card */
+  .card-content {
+    flex: 1; /* Allow the text to fill remaining space */
+    padding: 0 20px; /* Add spacing between image and text */
+    color: #000000; /* Darker text for contrast */
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column; /* Stack image and text vertically on smaller screens */
+    }
+  
+    .card img {
+      max-width: 100%; /* Make image full width */
+      margin-bottom: 15px; /* Add space below the image */
+    }
+  }
+  .top-qna-button {
+    margin-top: 20px; /* Increase spacing below the header */
+  }
+  
+  .container {
+    margin-top: 30px; /* Extra spacing before cards */
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.39); /* Slightly stronger white transparency */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* A stronger shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+  }
+  /* Fullscreen Image Modal */
+.image-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.719); /* Dark overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Close Button */
+.image-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.image-modal .close:hover {
+  color: #ff4d4d;
+}
+
+/* Cursor Pointer for Clickable Images */
+.card img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+/* Fullscreen Image Modal */
+.image-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .image-modal img {
+    max-width: 190%;
+    max-height: 190%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Close Button */
+  .image-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .image-modal .close:hover {
+    color: #ff4d4d;
+  }
+  
+  /* Cursor Pointer for Clickable Images */
+  .card img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img:hover {
+    transform: scale(1.05);
+  }
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
