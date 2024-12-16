@@ -343,7 +343,7 @@ footer {
   .card-content {
     flex: 1; /* Allow the text to fill remaining space */
     padding: 0 20px; /* Add spacing between image and text */
-    color: #000000; /* Darker text for contrast */
+    color: #ffffff; /* Darker text for contrast */
     font-size: 1.1rem;
     line-height: 1.5;
   }
