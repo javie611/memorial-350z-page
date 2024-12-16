@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="350z memorial page" />
+    <meta name="keywords" content="350z memorial page" />
+    <title>To a car I once had</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>My 350z (Daisy)</h1>
+      <p>A tribute to a car that meant so much to me</p>
+    </header>
+    <div class="top-qna-button">
+      <button id="scrollToQnA">Have questions? Jump to Q&A!</button>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <img
+          src="First image (daisy).JPG"
+          alt="First picture and first fill-up for her!"
+          title="First picture and first fill-up for her!"
+          class="resize-image"
+        />
+        <div class="card-content">
+          <p>
+            This was the first photo I ever took of Daisy. I had a friend drive
+            it to the gas station due to my lack of a license. Also, I remember
+            only spending 40 bucks to fill up—such a memory!
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="new wheels! (dmp).JPG"
+          alt="First big purchase for the Z s/o to offer up"
+          title="Best $1200 spent at the time."
+          class="resize-image"
+        />
+        <div class="card-content">
+          <p>
+            This is when I installed my favorite set of wheels. Daisy was more
+            than just a car to me.
+          </p>
+        </div>
+      </div>
+
+      <!-- New Section 3 -->
+      <div class="card">
+        <img
+          src="first time to the coast.JPG"
+          alt="Drove on the PCH for a few hours and finally stopped."
+          title="That side profile view."
+          class="resize-image"
+        />
+        <div class="card-content">
+          <p>
+            My first real road trip with her—I remember being so happy; I didn't
+            mind filling up twice.
+          </p>
+        </div>
+      </div>
+
+      <!-- New Section 4 -->
+      <div class="card">
+        <img
+          src="exhaust tip.JPG"
+          alt="I wanted a loud car"
+          title="Exhaust tip"
+          class="resize-image"
+        />
+        <div class="card-content">
+          <p>
+            Exhaust, exhaust! I remember wanting a loud car so badly, but I
+            didn’t want it to be annoyingly loud, so I spent the extra coin.
+          </p>
+        </div>
+      </div>
+
+      <!-- New Section 5 -->
+      <div class="card">
+        <img
+          src="one of my fave pics.JPG"
+          alt="Up in La Habra"
+          title="One of the last few aesthetic pics of little Daisy"
+          class="resize-image"
+        />
+        <div class="card-content">
+          <p>
+            I purchased a fancy camera to get better pics of her, but sadly
+            didn’t get too many before the accident.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="youtube-embed">
+      <iframe
+        width="320"
+        height="155"
+        src="https://www.youtube.com/embed/hq0rZ3IiyWw"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <div class="youtube-description">
+        <p>
+          My absolute favorite song to listen to while driving her! (Join me for
+          a ride—press play for the whole experience.)
+        </p>
+        <a href="https://www.youtube.com/embed/hq0rZ3IiyWw" target="_blank"
+          >Watch on YouTube</a
+        >
+      </div>
+    </div>
+
+    <div class="qa-section">
+      <button class="qa-button">
+        Want to know more about the accident? (Click here)
+      </button>
+      <div class="qa-content">
+        <div class="qa-scrollable">
+          <div class="qa-item">
+            <p><strong>Q1: What year was Daisy?</strong></p>
+            <p>
+              A1: Daisy was a 2008 model, best year in my opinion in terms of
+              tech and looks, also HR engine.
+            </p>
+          </div>
+          <div class="qa-item">
+            <p><strong>Q2: What happened?</strong></p>
+            <p>
+              A2: I got rear eneded one morning on my way to work at around 7am.
+            </p>
+          </div>
+          <div class="qa-item">
+            <p><strong>Q3: Who hit you?</strong></p>
+            <p>
+              A3: A 17 year old girl that had just got her license, on her way
+              to school.
+            </p>
+          </div>
+          <div class="qa-item">
+            <p>
+              <strong>Q4: insuarance get involved?</strong>
+            </p>
+            <p>
+              A4: At first i wanted to let the girl off the hook but as bills
+              piled up for potential repairs i had to go the insurance route.
+            </p>
+          </div>
+          <div class="qa-item">
+            <p><strong>Q5: Where is she now?</strong></p>
+            <p>
+              A5: "It ended up being a total loss, sadly, and I was cashed out
+              for the estimated value of the car. They let me keep her, but I
+              just didn’t really have the time nor the financial resources to
+              fix her, so I sold her to a young man that did."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+      <span class="close" id="closeModal">&times;</span>
+      <img id="modalImage" src="" alt="Expanded Image" />
+    </div>
+
+    <footer>
+      <p>&copy; 2024 - My 350z Memorial Page!</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const qaButton = document.querySelector(".qa-button");
+        const qaContent = document.querySelector(".qa-content");
+
+        qaButton.addEventListener("click", function () {
+          qaContent.classList.toggle("show");
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
